@@ -8,21 +8,19 @@
 </head>
 <body>
     <h1>Nacionalidade</h1>
-    Qual é sua Nacionalidade ?<input type="text" name="txtvel" id="txtvel"> =
-    <input type="buttom" value="país" onclick="avaliar()">
-    <div id="país">
+    Qual é sua Nacionalidade ?<input type="text" name="txtpaís" id="txtpaís"> =
+    <input type="buttom" 
+    " onclick="avaliar()">
+    <div id="res">
 
     </div>
     <script>
         function avaliar(){
-        var txtv = document.querySelector('input#txtvel')
-        var país = document.querySelector('div#país')
-        país.innerHTML = `<p>Qual é sua nacionalidade?<strong>${país}</strong></p>`
-        if (vel != Espanha {
-            país.innerHTML += `<p>Você é <strong>!ESTRANGEIRO!</strong>.</p>` 
-        }
-        país.innerHTML += `<p>Seja bem vindo à Espanha!!!`
-        }
+        var txtpaís = document.querySelector('input#txtpaís')
+        var res =document.querySelector('div#res')
+        var país = Text(txtpaís)
+        res.innerHTML = `<p>Qual é sua nacionalidade?<strong>${país}</strong></p>`
+        
     </script>
 </body>
 </html>
