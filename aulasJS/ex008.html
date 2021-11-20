@@ -18,10 +18,10 @@
 
     <script >
         function calcular() {
-            let  num = Number (window.prompt( 'Digite um número:'))
+            let  num = Number(window.prompt( 'Digite um número:'))
             
             let res = document.querySelector('section#result')
-            res.innerHTML = `<p>O número a ser analisado aqui será o <strong>${num}</strong></p><hr>`
+            res.innerHTML = `<p>O número a ser analisado aqui será o<strong>${num}</strong></p><hr>`
             res.innerHTML += `<p>O seu valor absoluto é ${Math.abs(num)}</p>`
             res.innerHTML  += `<p> A sua parte inteira é ${Math.trunc(num)}</p>`
             res.innerHTML  += `<p> O valor inteiro mais próximo é ${Math.round(num)}</p> `
