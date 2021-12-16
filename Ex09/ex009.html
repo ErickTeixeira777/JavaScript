@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Qual é sua Nacionalidade ?<input type="text" name="txtpaís" id="txtpaís"> =
+    <input type="buttom" 
+    " onclick="avaliar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function avaliar(){
+        var txtpaís = document.querySelector('input#txtpaís')
+        var res =document.querySelector('div#res')
+        var país = Text(txtpaís)
+        res.innerHTML = `<p>Qual é sua nacionalidade?<strong>${país}</strong></p>`
+        
+    </script>
+</body>
+</html>
+    
