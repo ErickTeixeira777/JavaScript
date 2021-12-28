@@ -1,19 +1,14 @@
-
 function carregar(){
+    var msg = window.document.getElementById('msg')
     var img = window.document.getElementById('imagem')
-    var hour = window.document.getElementById('hour')
     var data = new Date()
-    var hora = data.getHours()
-    var minuto = data.getMinutes()
-    var segundo = data.getSeconds()
-    hour.innerHTML = `Agora são ${hora}:${minuto}:${segundo}`
-    if (hora >= 0 && hora < 12) {
-        img.innerHTML = 'manha.png'
-    } else if (hora >= 12 && hora < 18) {
-        img.innerHTML = 'tarde.png'
-    } else{
-       img.innerHTML = 'noite.png'
-       
-   
+    var hora = 18
+    //var hora = data.getHours()
+    msg.innerHTML = `${hora} horas.`
+    if (hora >= 0 && hora < 12) { 
+        img.src = 'manha.png'
+    } else if (hora >= 12 && < 18) {
+        img.src = 'tarde.png'
+    } else {
+       img.src = 'noite.png'
     }
-}
